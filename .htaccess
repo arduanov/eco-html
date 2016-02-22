@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+Redirect 301 /about/disclosure/ /about/disclosure/corporation/
+Redirect 301 /about/ /about/vcard/
+Redirect 301 /about/press/ /about/press/news/
+Redirect 301 /about/press/news/show_317/ /about/press/news/
+Redirect 301 /business/crediting/ /business/crediting/smallbusiness/
+Redirect 301 /business/currency/ /business/currency/services/
+Redirect 301 /business/deposit/ /business/deposit/all/
+Redirect 301 /business/ /business/cashservice/
+Redirect 301 /business/remoteservice/ /business/remoteservice/bankclient/
+Redirect 301 /partnership/ /partnership/travel/
+Redirect 301 /personal/cards/ /personal/cards/depositcard/
+Redirect 301 /personal/cashservice/ /personal/cashservice/rubles/
+Redirect 301 /personal/crediting/ /personal/crediting/turpaket/
+Redirect 301 /personal/holdings/all/show_26/ /personal/holdings/all/
+Redirect 301 /personal/holdings/ /personal/holdings/all/
+Redirect 301 /personal/ /personal/holdings/
+Redirect 301 /moneyorders/ /personal/moneyorders/all/
+Redirect 301 /remoteaccess/ /personal/remoteaccess/bankclient/
