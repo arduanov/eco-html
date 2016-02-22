@@ -17,6 +17,6 @@ $sape = new SAPE_client();
 $links = $sape->return_links();
 
 $html = file_get_contents($file);
-$html = str_replace('[[[seo]]]', '', $links);
+$html = str_replace('[[[seo]]]', $links, $html);
 
 echo $html;
