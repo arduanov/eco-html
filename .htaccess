@@ -4,7 +4,7 @@ RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 
-RedirectMatch 301 /about/disclosure/ /about/disclosure/corporation/
+RedirectMatch 301 ^/about/disclosure/$ /about/disclosure/corporation/
 Redirect 301 /about/ /about/vcard/
 Redirect 301 /about/press/ /about/press/news/
 Redirect 301 /about/press/news/show_317/ /about/press/news/
