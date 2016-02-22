@@ -1,3 +1,4 @@
+
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
@@ -23,3 +24,7 @@ RedirectMatch 301 ^/personal/holdings/$ /personal/holdings/all/
 RedirectMatch 301 ^/personal/$ /personal/holdings/
 RedirectMatch 301 ^/moneyorders/$ /personal/moneyorders/all/
 RedirectMatch 301 ^/remoteaccess/$ /personal/remoteaccess/bankclient/
+
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*index\.html)$ index.php [QSA,L]
