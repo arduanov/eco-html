@@ -13,7 +13,10 @@ if (!is_file($file)) {
 
 define('_SAPE_USER', 'de6b0e7d66e8c5e1213be9ea1d776495');
 require_once('s/sape.php');
-$sape = new SAPE_client();
+
+$o['charset'] = 'UTF-8';
+
+$sape = new SAPE_client($o);
 $links = $sape->return_links();
 
 $html = file_get_contents($file);
